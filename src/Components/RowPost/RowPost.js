@@ -26,10 +26,10 @@ function RowPost(props) {
              if(response.data.results.length !==0){
                 setUrlId(response.data.results[0])
              }else{
-                console.log('empty array');
+                setUrlId('')
              }
            }).catch((e)=>{
-            console.log(e);
+                setUrlId('')
            })
       }
 
